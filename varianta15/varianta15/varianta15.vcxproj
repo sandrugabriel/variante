@@ -130,7 +130,6 @@
     <ClCompile Include="varianta15.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="backing.h" />
     <ClInclude Include="functii.h" />
     <ClInclude Include="solutii.h" />
   </ItemGroup>

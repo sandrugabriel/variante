@@ -26,9 +26,6 @@
     <ClInclude Include="solutii.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="backing.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="bac.txt">
