@@ -107,7 +107,7 @@ int sum(int x) {
 	return suma;
 
 }
-int afisSumDiv(int n, int a[]) {
+void afisSumDiv(int n, int a[]) {
 
 
     int v[100];
@@ -126,8 +126,6 @@ int afisSumDiv(int n, int a[]) {
 
 	for (int i = 0; i < n; i++)
 		cout << v[i] << " ";
-
-	return 0;
 
 }
 
