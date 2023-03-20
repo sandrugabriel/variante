@@ -66,9 +66,9 @@ Exemplu : dacă n=9, m=3, iar şirul este (14.2, 60, -7.5, -22, 33.8, 80, 4, 10,
 afişa pe ecran:
 33.8 60 80
 3 -7.5 -22*/
-void solutia2() {
-
-
+void solutia3() {
+	float x[100] = { 14.2, 60, -7.5, -22, 33.8, 80, 4, 10, 3 };
+	afisare(9, 3, x);
 
 }
 

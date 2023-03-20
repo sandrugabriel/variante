@@ -113,7 +113,7 @@ Exemplu : dacă n=9, m=3, iar şirul este (14.2, 60, -7.5, -22, 33.8, 80, 4, 10,
 afişa pe ecran:
 33.8 60 80
 3 -7.5 -22*/
-void ordonare(int x[100], int n) {
+void ordonare(float x[100], int n) {
 
 	int semn = 1;
 
@@ -123,7 +123,7 @@ void ordonare(int x[100], int n) {
 
 		for (int i = 0; i < n - 1; i++) {
 			if (x[i] > x[i + 1]) {
-				int aux = x[i];
+				float aux = x[i];
 				x[i] = x[i + 1];
 				x[i + 1] = aux;
 				semn = 0;
@@ -133,7 +133,20 @@ void ordonare(int x[100], int n) {
 	} while (semn == 0);
 
 }
+void afisare(int n, int m, float x[]) {
 
+
+	ordonare(x, n);
+
+	for (int i = n - m; i <= n - 1; i++)
+		cout << x[i] << " ";
+
+	cout << '\n';
+	for (int i = m - 1; i >= 0; i--)
+		cout << x[i] << " ";
+
+
+}
 
 
 
