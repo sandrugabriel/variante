@@ -72,8 +72,14 @@ void solutia3() {
 
 }
 
+/*Scrieţi un program C/C++ care creează fişierul text SIR.TXT şi scrie în el toate şirurile
+formate din două caractere distincte, litere mari ale alfabetului englez, astfel încât niciun şir
+să nu fie format din două vocale alăturate. Fiecare şir va fi scris pe câte o linie a fişierului.*/
+void solutia4() {
 
+	afisarea();
 
+}
 
 
 
