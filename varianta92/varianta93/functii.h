@@ -113,7 +113,7 @@ Exemplu : dacă n=9, m=3, iar şirul este (14.2, 60, -7.5, -22, 33.8, 80, 4, 10,
 afişa pe ecran:
 33.8 60 80
 3 -7.5 -22*/
-void ordonare(int x[100], int n) {
+void ordonare(float x[100], int n) {
 
 	int semn = 1;
 
@@ -123,7 +123,7 @@ void ordonare(int x[100], int n) {
 
 		for (int i = 0; i < n - 1; i++) {
 			if (x[i] > x[i + 1]) {
-				int aux = x[i];
+				float aux = x[i];
 				x[i] = x[i + 1];
 				x[i + 1] = aux;
 				semn = 0;
@@ -133,8 +133,41 @@ void ordonare(int x[100], int n) {
 	} while (semn == 0);
 
 }
+void afisare(int n, int m, float x[]) {
 
 
+	ordonare(x, n);
+
+	for (int i = n - m; i <= n - 1; i++)
+		cout << x[i] << " ";
+
+	cout << '\n';
+	for (int i = m - 1; i >= 0; i--)
+		cout << x[i] << " ";
+
+
+}
+
+/*Scrieţi un program C/C++ care creează fişierul text SIR.TXT şi scrie în el toate şirurile
+formate din două caractere distincte, litere mari ale alfabetului englez, astfel încât niciun şir
+să nu fie format din două vocale alăturate. Fiecare şir va fi scris pe câte o linie a fişierului.*/
+void afisarea() {
+
+	ofstream g("SIR.TXT");
+
+	char sir[4], vocale[] = "AEIOU";
+
+	sir[2] = '\n';
+	sir[3] = '\0';
+	for (sir[0] = 'A'; sir[0] <= 'Z'; sir[0]++)
+		for (sir[1] = 'A'; sir[1] <= 'Z'; sir[1]++) {
+			if (strchr(vocale, sir[0]) && strchr(vocale, sir[1]))
+				continue;
+			g << sir;
+		}
+
+
+}
 
 
 

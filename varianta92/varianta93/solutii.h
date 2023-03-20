@@ -66,14 +66,20 @@ Exemplu : dacă n=9, m=3, iar şirul este (14.2, 60, -7.5, -22, 33.8, 80, 4, 10,
 afişa pe ecran:
 33.8 60 80
 3 -7.5 -22*/
-void solutia2() {
-
-
+void solutia3() {
+	float x[100] = { 14.2, 60, -7.5, -22, 33.8, 80, 4, 10, 3 };
+	afisare(9, 3, x);
 
 }
 
+/*Scrieţi un program C/C++ care creează fişierul text SIR.TXT şi scrie în el toate şirurile
+formate din două caractere distincte, litere mari ale alfabetului englez, astfel încât niciun şir
+să nu fie format din două vocale alăturate. Fiecare şir va fi scris pe câte o linie a fişierului.*/
+void solutia4() {
 
+	afisarea();
 
+}
 
 
 
