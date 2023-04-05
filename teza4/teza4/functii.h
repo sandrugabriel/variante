@@ -38,7 +38,7 @@ Scrieți în limbajul C/C++ definiția completă a subprogramului numărare. Exe
 apel, subprogramul va returna valoarea 115.*/
 int numarare(int n, int m) {
 
-	int k, p, cn = n, cm = m, nrn, nrm, x, s;
+	int k, p, cn = n, cm = m, nrn=0, nrm=0, x, s;
 
 	k = 0, p = 0;
 
@@ -83,7 +83,7 @@ void afisarea() {
 
 	ifstream fin("bac.txt");
 
-	int x, vf[100], vfmax;
+	int x, vf[100], vfmax=-100;
 
 	while (fin>>x)
 	{

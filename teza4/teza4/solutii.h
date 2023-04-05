@@ -38,6 +38,7 @@ cu număr maxim de apariții. Exemplu: Dacă în fişier sunt numerele 27 -8 43 
 nu neapărat în această ordine -8 43 27.*/
 void solutia3() {
 
+	afisarea();
 
 }
 
