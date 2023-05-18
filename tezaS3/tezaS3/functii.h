@@ -1,6 +1,7 @@
 ﻿#pragma once
 #include <iostream>
 #include <fstream>
+#include <math.h>
 
 using namespace std;
 
@@ -108,18 +109,34 @@ void afisarea() {
 
 	int frecv[10000]{};
 	for (int i = 0; i < dim; i++) {
-		frecv[v[i]]++;
+		if (v[i] >= 0) {
+			frecv[v[i]]++;
+		}
+		else {
+			v[i] = 100 + abs(v[i]);
+			frecv[v[i]]++;
+		}
+		
 	}
 
-	for (int i = -99; i <= 99; i++) {
-		cout << i << "  " << frecv[i] << endl;
+	for (int i = 0; i <=200; i++) {
 		if (frecv[i] > maxi && frecv[i]!=0)
 			maxi = frecv[i];
 	}
 
-	for (int i = -99; i <= 99; i++) {
-		if (frecv[i] == maxi){}
-			//cout << i << " " << endl;
+	for (int i = 0; i <= 200; i++) {
+		if (frecv[i] == maxi) {
+			if (i <= 99) {
+				cout << i << " ";
+			}
+			else {
+				int nr = (i - 100);
+				cout << nr-nr*2 << " ";
+
+			}
+		
+		}
+			
 	}
 
 }
